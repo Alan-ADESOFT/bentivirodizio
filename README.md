@@ -10,7 +10,14 @@ npm start
 Abra http://localhost:3000 (vendedor: http://localhost:3000/?v=samuel)
 
 ## Colocar no ar
-Em Render, Railway ou similar:
+
+### Vercel (grátis, página estática)
+O `vercel.json` manda a Vercel entregar a pasta `public/` direto pela CDN, sem instalar
+nem compilar nada: o NestJS não roda lá, e não precisa — a página é um HTML só.
+Conectado ao GitHub, cada push no branch de produção publica sozinho.
+Vendedor continua funcionando pelo endereço: `https://SEU-ENDERECO.vercel.app/?v=samuel`.
+
+### Render, Railway ou similar (com o servidor NestJS)
 - Build command: npm install && npm run build
 - Start command: npm start
 (a porta é lida da variável PORT)
