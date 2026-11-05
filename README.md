@@ -22,6 +22,8 @@ Vendedor continua funcionando pelo endereço: `https://SEU-ENDERECO.vercel.app/?
 - Start command: npm start
 (a porta é lida da variável PORT)
 
+No ar no Railway: projeto "Bentivi Vitrine", serviço com este repositório (build `npm run build`, start `npm start`).
+
 ## Alterar a página
 Edite `public/index.html`, no bloco CONFIG do script:
 - WhatsApp: `numeroPadrao` e `vendedores`
